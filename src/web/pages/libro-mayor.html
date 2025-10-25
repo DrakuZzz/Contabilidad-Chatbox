@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro Mayor - Contabilidad</title>
+    <link rel="stylesheet" href="web/styles/styles.css"> <!-- Ajusta path relativo si es necesario -->
+</head>
+<body>
+    <h1>Libro Mayor</h1>
+    <p>Resumen de movimientos por cuenta contable.</p>
+    
+    <div>
+        <label>Fecha Inicio: <input type="date" id="fechaInicio"></label>
+        <label>Fecha Fin: <input type="date" id="fechaFin"></label>
+        <button onclick="cargarLibroMayor()">Cargar</button>
+    </div>
+    
+    <div id="libroMayor">
+        <p>Cargando...</p>
+    </div>
+    
+    <a href="/">← Volver a Principal</a>
+    
+    <script src="/web/middleware/libro-mayor.js"></script> <!-- Path relativo desde pages/ -->
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asiento Inicial</title>
+    <link rel="stylesheet" href="web/styles/styles.css">
+</head>
+<body>
+    <h1>Asiento Inicial</h1>
+
+    <label for="cuentasSelect">Seleccione una cuenta:</label>
+    <select id="cuentasSelect">
+        <option value="">-- Seleccionar cuenta --</option>
+    </select>
+    <button id="agregarBtn">Agregar a la tabla</button>
+
+    <table id="tablaApertura">
+        <thead>
+            <tr>
+                <th>Cuenta</th>
+                <th>ID Cuenta</th>
+                <th>Monto</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <button id="guardarBtn">Guardar Apertura</button>
+
+    <script src="/web/middleware/apertura.js"></script>
+</body>
+</html>

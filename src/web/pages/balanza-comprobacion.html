@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balanza de Comprobación - Contabilidad</title>
+    <link rel="stylesheet" href="web/styles/styles.css"> <!-- Absoluto: asume src/styles/ -->
+</head>
+<body>
+    <h1>Balanza de Comprobación</h1>
+    <p>Verificación de totales de débitos y créditos por cuenta hasta la fecha seleccionada.</p>
+    
+    <div>
+        <label>Fecha Límite: <input type="date" id="fechaFin"></label>
+        <button onclick="cargarBalanza()">Cargar</button>
+    </div>
+    
+    <div id="balanza">
+        <p>Cargando...</p>
+    </div>
+    
+    <a href="/">← Volver a Principal</a>
+    
+    <!-- CAMBIO CLAVE: Path absoluto -->
+    <script src="web/middleware/balanza-comprobacion.js"></script>
+</body>
+</html>

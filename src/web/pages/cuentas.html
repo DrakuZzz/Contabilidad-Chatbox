@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cuentas Contables</title>
+    <link rel="stylesheet" href="web/styles/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <center>
+                <h1>Registro de Cuentas Contables</h1>
+                <div class="caja">
+                    <input type='text' id='Numero' placeholder="Numero" required>
+                    <input type='text' id='Cuenta' placeholder="Cuenta" required>
+                    <select id="tipo" required>
+                        <option value="" selected hidden>Seleccionar tipo</option>
+                        <option value="1.1">Activo Circulante</option>
+                        <option value="1.2">Activo No Circulante</option>
+                        <option value="2.1">Pasivo a Corto Plazo</option>
+                        <option value="2.2">Pasivo a Largo Plazo</option>
+                        <option value="3.1">Capital Contribuido</option>
+                        <option value="3.2">Capital Ganado</option>
+                    </select>
+                </div>
+                <button type="submit" name="Registrar" id="add">Registrar</button>
+            </center>
+        </form>
+    </div>
+
+    <script src="/web/middleware/cuentas.js"></script>
+</body>
+
+</html>

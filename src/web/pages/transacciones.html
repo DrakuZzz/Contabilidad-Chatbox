@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Transacciones Contables</title>
+    <link rel="stylesheet" href="web/styles/styles.css">
+</head>
+
+<body>
+    <h1>Registro de Transacciones Contables</h1>
+    <h2>Catalogo de Cuentas Contables</h2>
+    <div id="Cuentas">
+    </div>
+    <a href="/addcuentas">
+        <p>Click para registrar una Cuenta Contable</p>
+    </a>
+    <h2>Asiento Inicial</h2>
+    <div id="Asiento">
+    </div>
+    <a href="/asiento">
+        <p>Click para hacer Asiento Inicial</p>
+    </a>
+    <h2>Facturas</h2>
+    <div id="Facturas">
+    </div>
+    <a href="/factura">
+        <p>Click para hacer una Factura</p>
+    </a>
+
+    <!-- ... tu HTML existente ... -->
+
+    <h2>Reportes Contables</h2>
+    <div>
+        <a href="/libro-diario">
+            <p>📖 Libro Diario</p>
+        </a>
+        <a href="/libro-mayor">
+            <p>📚 Libro Mayor</p>
+        </a>
+        <a href="/balanza-comprobacion">
+            <p>⚖️ Balanza de Comprobación</p>
+        </a>
+        <a href="/estado-resultado">
+            <p>💰 Estado de Resultado</p>
+        </a>
+        <h2>Reportes Contables</h2>
+        <div>
+            <h3>Balance General</h3>
+            <button id="loadBalanceBtn">Cargar Balance General</button>
+            <div id="balanceTable"></div>
+        </div>
+    </div>
+
+    <!-- Botón flotante del chatbox -->
+    <div id="chatbox-button">
+        <button id="toggleChatbox">💬</button>
+    </div>
+
+    <!-- Chatbox flotante -->
+   <!-- Botón para abrir el chat -->
+<button id="toggleChatbox">Abrir Chat</button>
+
+<!-- Chatbox flotante -->
+<div id="chatbox">
+    <div id="chatbox-header">
+        Chat de Soporte
+        <span id="chatbox-close">✕</span>
+    </div>
+
+    <div id="chatbox-body">
+        <!-- Columna izquierda: menú de preguntas -->
+        <div id="preguntas-columna"></div>
+
+        <!-- Columna derecha: mensajes -->
+        <div id="chat-columna">
+            <div id="chatbox-messages">
+                <p><strong>Soporte:</strong> ¡Hola! ¿En qué puedo ayudarte?</p>
+            </div>
+            <div id="chatbox-input">
+                <input type="text" id="chatInput" placeholder="Escribe tu mensaje...">
+                <button id="sendMessage">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="/web/middleware/transacciones.js"></script>
+</body>
+
+</html>

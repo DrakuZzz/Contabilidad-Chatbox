@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado de Resultado - Contabilidad</title>
+    <link rel="stylesheet" href="web/styles/styles.css"> <!-- Absoluto para consistencia -->
+</head>
+<body>
+    <h1>Estado de Resultado</h1>
+    <p>Ingresa los datos para generar el estado de resultado dinámicamente.</p>
+    
+    <div>
+        <label>Fecha del Estado: <input type="date" id="fechaEstado"></label><br>
+        <label>Ventas totales: <input type="number" id="ventasTotales" step="0.01" placeholder="Ej: 92000"></label><br>
+        <label>Compras: <input type="number" id="compras" step="0.01" placeholder="Ej: 6292"></label><br>
+        <label>Gastos de venta: <input type="number" id="gastosVenta" step="0.01" placeholder="Ej: 21000"></label><br>
+        <label>Gastos de administración: <input type="number" id="gastosAdmin" step="0.01" placeholder="Ej: 8449"></label><br>
+        <button id="btnCargar">Generar Tabla</button>
+    </div>
+    
+    <div id="estadoResultado"></div>  <!-- Aquí se inserta la tabla dinámicamente -->
+
+    <div id="listaEstados">
+    </div>
+
+    <a href="/">← Volver a Principal</a>
+    
+    <script src="/web/middleware/estado-resultado.js"></script>
+</body>
+</html>

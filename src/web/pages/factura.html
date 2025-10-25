@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Registrar Factura</title>
+    <link rel="stylesheet" href="web/styles/styles.css">
+</head>
+<body>
+    <h1>Registrar Factura</h1>
+
+    <form id="facturaForm">
+        <label>Tipo:
+            <select id="tipo" required>
+                <option value="">-- Seleccione --</option>
+                <option value="compra">Compra</option>
+                <option value="venta">Venta</option>
+            </select>
+        </label><br/>
+
+        <label>Fecha:
+            <input type="date" id="fecha" required />
+        </label><br/>
+
+        <label>Subtotal:
+            <input type="number" id="subtotal" step="0.01" min="0" required />
+        </label><br/>
+
+        <label>IVA:
+            <input type="number" id="iva" step="0.01" min="0" required />
+        </label><br/>
+
+        <label>Total:
+            <input type="number" id="total" step="0.01" min="0" required readonly />
+        </label><br/>
+
+        <label>Descripción:
+            <input type="text" id="descripcion" />
+        </label><br/>
+
+        <h3>Detalles de la factura</h3>
+        <div id="detallesContainer"></div>
+
+        <button type="button" id="addDetalleBtn">Agregar detalle</button><br/><br/>
+
+        <button type="submit">Registrar Factura</button>
+    </form>
+    <script src="/web/middleware/factura.js"></script>
+</body>
+</html>

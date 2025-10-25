@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro Diario - Contabilidad</title>
+    <link rel="stylesheet" href="web/styles/styles.css"> <!-- Absoluto: asume src/styles/ -->
+</head>
+<body>
+    <h1>Libro Diario</h1>
+    <p>Registro cronológico de transacciones contables.</p>
+    
+    <div>
+        <label>Fecha Inicio: <input type="date" id="fechaInicio"></label>
+        <label>Fecha Fin: <input type="date" id="fechaFin"></label>
+        <button onclick="cargarLibroDiario()">Cargar</button>
+    </div>
+    
+    <div id="libroDiario">
+        <p>Cargando...</p>
+    </div>
+    
+    <a href="/">← Volver a Principal</a>
+
+    <script src="/web/middleware/libro-diario.js"></script>
+</body>
+</html>
